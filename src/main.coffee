@@ -1,3 +1,5 @@
+require('./main.css')
+
 greetings = [
     'Hello World',
     'Hola Mundo',

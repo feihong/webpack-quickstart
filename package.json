@@ -1,6 +1,9 @@
 {
   "devDependencies": {
+    "css-loader": "latest",
+    "style-loader": "latest",
     "coffee-loader": "latest",
+    "stylus-loader": "latest",
     "webpack-bundle-tracker": "latest"
   }
 }

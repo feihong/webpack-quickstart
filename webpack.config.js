@@ -16,7 +16,18 @@ module.exports = {
 
   module: {
     loaders: [
-      { test: /\.coffee$/, loader: 'coffee-loader' }
+      {
+        test: /\.coffee$/,
+        loader: 'coffee-loader'
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+      },
+      // {
+      //   test: /\.styl$/,
+      //   loader: 'style-loader!css-loader!stylus-loader'
+      // }
     ]
   }
 }

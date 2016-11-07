@@ -6,8 +6,9 @@ A simple webpack example project
 
 ```
 brew install node
-npm install -g webpack coffee-script
+npm install -g webpack coffee-script stylus
 npm link coffee-script
+npm link stylus
 ```
 
 ```
