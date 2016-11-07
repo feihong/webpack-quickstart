@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "coffee-loader": "latest"
+  }
+}

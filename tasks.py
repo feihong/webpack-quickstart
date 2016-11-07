@@ -1,16 +1,16 @@
-from invoke import task, run
+from invoke import task
 
 
 @task
 def serve(ctx):
-    run('python -m SimpleHTTPServer 8000')
+    ctx.run('cd static; python3 -m http.server 8000')
 
 
 @task
 def build(ctx):
-    run('webpack --progress --colors --optimize-minimize')
+    ctx.run('webpack --progress --colors --optimize-minimize')
 
 
 @task
 def watch(ctx):
-    run('webpack --progress --colors -d --watch')
+    ctx.run('webpack --progress --colors -d --watch')
