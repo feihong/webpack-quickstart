@@ -3,11 +3,14 @@ let BundleTracker = require('webpack-bundle-tracker')
 
 
 module.exports = {
-  entry: './src/main.coffee',
+  entry: {
+    main: './src/main.coffee',
+    cool: './src/cool.coffee',
+  },
 
   output: {
     path: './static/',
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
 
   plugins: [

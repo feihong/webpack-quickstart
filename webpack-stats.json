@@ -1,10 +1,16 @@
 {
   "status": "done",
   "chunks": {
+    "cool": [
+      {
+        "name": "cool.js",
+        "path": "static/cool.js"
+      }
+    ],
     "main": [
       {
-        "name": "bundle.js",
-        "path": "static/bundle.js"
+        "name": "main.js",
+        "path": "static/main.js"
       }
     ]
   }
