@@ -9,6 +9,10 @@ WEBPACK_WATCH_COMMAND = 'webpack --progress --colors --debug --watch'
 
 @task
 def serve(ctx):
+    """
+    Run the web server and webpack watcher at the same time.
+
+    """
     import http.server
     import socketserver
 
@@ -26,9 +30,17 @@ def serve(ctx):
 
 @task
 def build(ctx):
+    """
+    Build the source files.
+
+    """
     ctx.run('webpack --progress --colors --optimize-minimize')
 
 
 @task
 def watch(ctx):
+    """
+    Launch the webpack watcher.
+    
+    """
     ctx.run(WEBPACK_WATCH_COMMAND)
